@@ -31,7 +31,7 @@ async def send_settings_message(chat_id, user_id):
         b'addsession'), Button.inline('🚪 Logout', b'logout')], [Button.
         inline('🖼️ Set Thumbnail', b'setthumb'), Button.inline(
         '❌ Remove Thumbnail', b'remthumb')], [Button.url('🆘 Report Errors',
-        'https://t.me/team_spy_pro')]]
+        'https://t.me/skillwithchiru')]]
     await gf.send_message(chat_id, MESS, buttons=buttons)
     
 active_conversations = {}
