@@ -19,7 +19,7 @@ PUBLIC_LINK_PATTERN = re.compile(r'(https?://)?(t\.me|telegram\.me)/([^/]+)(/(\d
 PRIVATE_LINK_PATTERN = re.compile(r'(https?://)?(t\.me|telegram\.me)/c/(\d+)(/(\d+))?')
 
 # MongoDB connection
-MONGO_URI = os.getenv("MONGO_DB", "mongodb+srv://chiruedizz:WmzSiQlS35fLDImn@cluster0.4o4zl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+MONGO_URI = os.getenv("MONGO_DB", "mongodb+srv://ggn:surabhimusicbot@ggnvv.g6qusje.mongodb.net/?retryWrites=true&w=majority&appName=ggnvv")
 DB_NAME = os.getenv("DB_NAME", "telegram_downloader")
 
 
@@ -322,7 +322,7 @@ a4 = "cmVwbHlfcGhvdG8="
 a5 = "c3RhcnQ="
 attr1 = "cGhvdG8="
 attr2 = "ZmlsZV9pZA=="
-a7 = "SGkg8J+RiyBXZWxjb21lLCBXYW5uYSBpbnRyby4uLj8KCluKkiBJIGNhbiBzYXZlIHBvc3RzIGZyb20gY2hhbm5lbHMgb3IgZ3JvdXBzIHdoZXJlIGZvcndhcmRpbmcgaXMgb2ZmLiBJIGNhbiBkb3dubG9hZCB2aWRlb3MvYXVkaW8gZnJvbSBZVCwgSU5TVEEsLi4uIHNvY2lhbCBwbGF0Zm9ybXMKVuKkiCBTaW1wbHkgc2VuZCB0aGUgcG9zdCBsaW5rIG9mIGEgcHVibGljIGNoYW5uZWwuIEZvciBwcml2YXRlIGNoYW5uZWxzLCBkbyAvbG9naW4uIFNlbmQgL2hlbHAgdG8ga25vdyBtb3JlLg=="
+a7 = "SGkg8J+RiyBXZWxjb21lLCBXYW5uYSBpbnRyby4uLj8gCgrinLPvuI8gSSBjYW4gc2F2ZSBwb3N0cyBmcm9tIGNoYW5uZWxzIG9yIGdyb3VwcyB3aGVyZSBmb3J3YXJkaW5nIGlzIG9mZi4gSSBjYW4gZG93bmxvYWQgdmlkZW9zL2F1ZGlvIGZyb20gWVQsIElOU1RBLCAuLi4gc29jaWFsIHBsYXRmb3JtcwrinLPvuI8gU2ltcGx5IHNlbmQgdGhlIHBvc3QgbGluayBvZiBhIHB1YmxpYyBjaGFubmVsLiBGb3IgcHJpdmF0ZSBjaGFubmVscywgZG8gL2xvZ2luLiBTZW5kIC9oZWxwIHRvIGtub3cgbW9yZS4="
 a8 = "Sm9pbiBDaGFubmVs"
 a9 = "R2V0IFByZW1pdW0=" 
 a10 = "aHR0cHM6Ly90Lm1lL3RlYW1fc3B5X3Bybw==" 
