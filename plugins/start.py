@@ -15,14 +15,14 @@ async def subscribe(app, message):
           user = await app.get_chat_member(LOG_GROUP, message.from_user.id)
           print(user)
           if str(user.status) == "ChatMemberStatus.BANNED":
-              await message.reply_text("You are Banned. Contact -- Team SPY")
+              await message.reply_text("You are Banned. Contact -- @chiru52")
               return 1
         except UserNotParticipant:
             caption = f"Join our channel to use the bot"
-            await message.reply_photo(photo="https://graph.org/file/d44f024a08ded19452152.jpg",caption=caption, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Join Now...", url=f"https://t.me/quiz_zone_new")]]))
+            await message.reply_photo(photo="https://graph.org/file/d44f024a08ded19452152.jpg",caption=caption, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Join Now...", url=f"https://t.me/skillwithchiru")]]))
             return 1
         except Exception:
-            await message.reply_text("Something Went Wrong. Contact admins...")
+            await message.reply_text("Something Went Wrong. Contact admin @chiru52...")
             return 1 
      
 @app.on_message(filters.command("set"))
@@ -102,7 +102,7 @@ help_pages = [
         "> 4. REPLACEWORDS : Can be used for words in deleted set via REMOVE WORDS\n"
         "> 5. RESET : To set the things back to default\n\n"
         "> You can set CUSTOM THUMBNAIL, PDF WATERMARK, VIDEO WATERMARK, SESSION-based login, etc. from settings\n\n"
-        "**__Powered by Team SPY__**"
+        "**__Powered by 🅲🅷🅸🆁🆄__**"
     )
 ]
  
@@ -170,7 +170,7 @@ async def terms(client, message):
     buttons = InlineKeyboardMarkup(
         [
             [InlineKeyboardButton("📋 See Plans", callback_data="see_plan")],
-            [InlineKeyboardButton("💬 Contact Now", url="https://t.me/kingofpatal")],
+            [InlineKeyboardButton("💬 Contact Now", url="https://t.me/chiru52")],
         ]
     )
     await message.reply_text(terms_text, reply_markup=buttons)
@@ -189,7 +189,7 @@ async def plan(client, message):
     buttons = InlineKeyboardMarkup(
         [
             [InlineKeyboardButton("📜 See Terms", callback_data="see_terms")],
-            [InlineKeyboardButton("💬 Contact Now", url="https://t.me/kingofpatal")],
+            [InlineKeyboardButton("💬 Contact Now", url="https://t.me/chiru52")],
         ]
     )
     await message.reply_text(plan_text, reply_markup=buttons)
@@ -208,7 +208,7 @@ async def see_plan(client, callback_query):
     buttons = InlineKeyboardMarkup(
         [
             [InlineKeyboardButton("📜 See Terms", callback_data="see_terms")],
-            [InlineKeyboardButton("💬 Contact Now", url="https://t.me/kingofpatal")],
+            [InlineKeyboardButton("💬 Contact Now", url="https://t.me/chiru52")],
         ]
     )
     await callback_query.message.edit_text(plan_text, reply_markup=buttons)
@@ -226,7 +226,7 @@ async def see_terms(client, callback_query):
     buttons = InlineKeyboardMarkup(
         [
             [InlineKeyboardButton("📋 See Plans", callback_data="see_plan")],
-            [InlineKeyboardButton("💬 Contact Now", url="https://t.me/kingofpatal")],
+            [InlineKeyboardButton("💬 Contact Now", url="https://t.me/chiru52")],
         ]
     )
     await callback_query.message.edit_text(terms_text, reply_markup=buttons)
